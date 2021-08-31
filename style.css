@@ -1,0 +1,180 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  /* overflow: hidden; */
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header__content {
+  color: #fff;
+  background: #003049;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+  height: 450px;
+}
+
+.again--section {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn--again {
+  border: none;
+  font-size: 2.5rem;
+  padding: 0.7rem 1.7rem;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.25s;
+  box-shadow: 3px 4px 16px rgb(27, 26, 26);
+}
+.btn--again:hover {
+  opacity: 0.8;
+}
+
+.between {
+  font-size: 1.7rem;
+}
+
+.guess-text {
+  font-size: 7rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 4.6rem;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .btn--again {
+    font-size: 1.7rem;
+  }
+
+  .guess-text {
+    font-size: 3rem;
+  }
+}
+
+.show--number {
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  left: 50%;
+  margin-top: 2rem;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  text-align: center;
+  color: black;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .show--number {
+    font-size: 3rem;
+    width: 100px;
+    height: 100px;
+  }
+  .header__content {
+    height: 370px;
+  }
+}
+
+.play--section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.7rem;
+}
+
+.input__number input {
+  width: 170px;
+  height: 60px;
+  font-size: 4rem;
+  text-align: center;
+  padding: 1rem;
+  display: block;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.btn--check {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 5vw;
+  font-size: 2.2rem;
+  background: #264653;
+  outline: 0;
+  font-weight: 600;
+  border: 0;
+  border-radius: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.25s;
+}
+
+.btn--check:hover {
+  background: #1c3b47;
+}
+
+.input__number input:focus {
+  outline: 0;
+}
+
+.text {
+  font-size: 3.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.text__content {
+  text-align: center;
+}
+
+.input--section {
+  display: flex;
+  justify-content: center;
+}
+
+.score--content {
+  font-size: 2rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.highscore--content {
+  font-size: 2rem;
+  font-weight: 650;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .input__number input {
+    width: 100px;
+    height: 70px;
+    font-size: 2.6rem;
+  }
+  .text {
+    font-size: 2.3rem;
+  }
+}
